@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shelly Enhedsvælger — Find den rigtige enhed til dit projekt</title>
+    <title>Shelly Enhedsvælger</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -18,13 +18,27 @@
                     <text x="0" y="22" font-family="Inter" font-weight="800" font-size="22" fill="currentColor">shelly</text>
                 </svg>
                 <span class="logo-divider"></span>
-                <span class="logo-subtitle">Enhedsvælger</span>
+                <span class="logo-subtitle" data-i18n="subtitle">Enhedsvælger</span>
             </div>
             <nav class="header-nav">
-                <div class="result-count" id="resultCount"></div>
+                <div class="lang-selector" id="langSelector">
+                    <button class="lang-btn" id="langBtn">
+                        <span class="lang-flag" id="langFlag">🇩🇰</span>
+                        <span class="lang-code" id="langCode">DA</span>
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="lang-dropdown" id="langDropdown">
+                        <button class="lang-option active" data-lang="da"><span>🇩🇰</span> Dansk</button>
+                        <button class="lang-option" data-lang="sv"><span>🇸🇪</span> Svenska</button>
+                        <button class="lang-option" data-lang="no"><span>🇳🇴</span> Norsk</button>
+                        <button class="lang-option" data-lang="fi"><span>🇫🇮</span> Suomi</button>
+                        <button class="lang-option" data-lang="de"><span>🇩🇪</span> Deutsch</button>
+                        <button class="lang-option" data-lang="en"><span>🇬🇧</span> English</button>
+                    </div>
+                </div>
                 <button class="btn-reset" id="resetBtn">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 1 3.5 7.1"/><polyline points="3 3 3 12 12 12"/></svg>
-                    Nulstil filtre
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 1 3.5 7.1"/><polyline points="3 3 3 12 12 12"/></svg>
+                    <span data-i18n="reset">Start forfra</span>
                 </button>
             </nav>
         </div>
@@ -33,63 +47,99 @@
     <!-- Hero -->
     <section class="hero">
         <div class="hero-inner">
-            <h1>Find den perfekte Shelly enhed</h1>
-            <p>Brug filtrene til at indsnævre udvalget baseret på dit projekt og dine krav.</p>
+            <h1 data-i18n="heroTitle">Find den perfekte Shelly enhed</h1>
+            <p data-i18n="heroDesc">Gennemgå tre enkle trin for at finde den rigtige enhed til dit projekt.</p>
+        </div>
+        <div class="hero-steps" id="stepsIndicator">
+            <div class="step active" data-step="1">
+                <div class="step-number">1</div>
+                <span data-i18n="step1Label">Anvendelse</span>
+            </div>
+            <div class="step-line"></div>
+            <div class="step" data-step="2">
+                <div class="step-number">2</div>
+                <span data-i18n="step2Label">Specifikationer</span>
+            </div>
+            <div class="step-line"></div>
+            <div class="step" data-step="3">
+                <div class="step-number">3</div>
+                <span data-i18n="step3Label">Enheder</span>
+            </div>
         </div>
     </section>
 
-    <!-- Main Content: Sidebar + Results -->
-    <main class="main-layout">
-        <!-- Filters Sidebar -->
-        <aside class="sidebar" id="sidebar">
-            <div class="sidebar-header">
-                <h2>Filtre</h2>
-                <button class="btn-clear-all" id="clearAllBtn">Ryd alle</button>
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Step 1: Use Case -->
+        <section class="step-content active" id="step1">
+            <div class="section-header">
+                <h2 data-i18n="step1Title">Hvad skal enheden bruges til?</h2>
+                <p data-i18n="step1Desc">Vælg en eller flere anvendelser der beskriver dit projekt.</p>
             </div>
-            <div class="filters-list" id="filtersList">
-                <!-- Populated by JS -->
-            </div>
-        </aside>
-
-        <!-- Mobile Filter Toggle -->
-        <button class="mobile-filter-toggle" id="mobileFilterToggle">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="16" y2="12"/><line x1="4" y1="18" x2="12" y2="18"/></svg>
-            Filtre
-            <span class="active-filter-count" id="activeFilterCount" style="display:none">0</span>
-        </button>
-
-        <!-- Results Area -->
-        <section class="results-area">
-            <div class="results-toolbar">
-                <div class="results-info" id="resultsInfo">
-                    <span class="results-total" id="resultsTotal"></span>
-                </div>
-                <div class="active-filters" id="activeFilters">
-                    <!-- Populated by JS -->
-                </div>
-            </div>
-            <div class="results-grid" id="resultsGrid">
-                <!-- Populated by JS -->
-            </div>
-            <div class="no-results" id="noResults" style="display:none;">
-                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
-                <h3>Ingen enheder matcher dine filtre</h3>
-                <p>Prøv at fjerne eller justere nogle filtre for at se flere enheder.</p>
+            <div class="usecase-grid" id="usecaseGrid"></div>
+            <div class="step-actions">
+                <button class="btn btn-primary" id="toStep2" disabled>
+                    <span data-i18n="next">Næste</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+                </button>
             </div>
         </section>
-    </main-layout>
 
-    <!-- Mobile Filter Overlay -->
-    <div class="mobile-overlay" id="mobileOverlay"></div>
+        <!-- Step 2: Specifications -->
+        <section class="step-content" id="step2">
+            <div class="section-header">
+                <h2 data-i18n="step2Title">Tilpas dine krav</h2>
+                <p data-i18n="step2Desc">Vælg de specifikationer der er relevante for dit projekt. Du kan springe filtre over.</p>
+            </div>
+            <div class="filters-container" id="filtersContainer"></div>
+            <div class="step-actions">
+                <button class="btn btn-secondary" id="backToStep1">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+                    <span data-i18n="back">Tilbage</span>
+                </button>
+                <button class="btn btn-primary" id="toStep3">
+                    <span data-i18n="showResults">Vis enheder</span>
+                    <span class="btn-count" id="previewCount"></span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+                </button>
+            </div>
+        </section>
+
+        <!-- Step 3: Results -->
+        <section class="step-content" id="step3">
+            <div class="section-header">
+                <h2 data-i18n="step3Title">Anbefalede enheder</h2>
+                <p id="resultsSubtitle" data-i18n="step3Desc">Baseret på dine valg anbefaler vi følgende enheder.</p>
+            </div>
+            <div class="results-summary" id="resultsSummary"></div>
+            <div class="results-grid" id="resultsGrid"></div>
+            <div class="no-results" id="noResults" style="display:none;">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                <h3 data-i18n="noResultsTitle">Ingen enheder matcher</h3>
+                <p data-i18n="noResultsDesc">Prøv at justere dine filtre for at se flere enheder.</p>
+            </div>
+            <div class="step-actions">
+                <button class="btn btn-secondary" id="backToStep2">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+                    <span data-i18n="adjustFilters">Juster filtre</span>
+                </button>
+                <button class="btn btn-outline" id="startOver">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 1 3.5 7.1"/><polyline points="3 3 3 12 12 12"/></svg>
+                    <span data-i18n="reset">Start forfra</span>
+                </button>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-inner">
-            <p>Shelly Enhedsvælger &mdash; Et værktøj til at finde den rigtige Shelly enhed.</p>
-            <p class="footer-disclaimer">Produktdata er vejledende. Tjek altid de officielle specifikationer på <a href="https://www.shelly.com" target="_blank" rel="noopener">shelly.com</a></p>
+            <p data-i18n="footerText">Shelly Enhedsvælger &mdash; Et værktøj til at finde den rigtige Shelly enhed.</p>
+            <p class="footer-disclaimer"><span data-i18n="footerDisclaimer">Produktdata er vejledende. Tjek altid de officielle specifikationer på</span> <a href="https://www.shelly.com" target="_blank" rel="noopener">shelly.com</a></p>
         </div>
     </footer>
 
+    <script src="i18n.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
