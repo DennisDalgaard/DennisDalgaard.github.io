@@ -225,7 +225,7 @@ function renderFilters() {
                 ${config.values.map(val => `
                     <button class="filter-chip" data-filter="${config.key}" data-value="${val}">
                         <span class="chip-check"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
-                        ${val}
+                        ${tFilterValue(val)}
                     </button>
                 `).join('')}
             </div>
@@ -293,7 +293,7 @@ function renderResults() {
     const tags = [];
     state.selectedUseCases.forEach(uc => tags.push(tUseCase(uc)));
     Object.entries(state.filters).forEach(([key, vals]) => {
-        vals.forEach(v => tags.push(v));
+        vals.forEach(v => tags.push(tFilterValue(v)));
     });
     summary.innerHTML = tags.map(tag => `
         <span class="summary-tag">
@@ -409,6 +409,7 @@ function goToStep(step) {
 
     if (step === 2) {
         updateConditionalFilters();
+        updateFilterAvailability();
         updatePreviewCount();
     }
     if (step === 3) {
@@ -440,6 +441,73 @@ function updateConditionalFilters() {
     const group = document.getElementById('filterGroup_type_lysstyring');
     if (!group) return;
     group.classList.toggle('filter-hidden', !shouldShowFilter('type_lysstyring'));
+}
+
+// ─── Update filter availability (hide zero-result options) ──
+function updateFilterAvailability() {
+    // Get products matching current use cases
+    const baseProducts = filterByUseCases();
+
+    filterConfig.forEach(config => {
+        const groupEl = document.getElementById('filterGroup_' + config.key);
+        if (!groupEl || groupEl.classList.contains('filter-hidden')) return;
+
+        const chips = groupEl.querySelectorAll('.filter-chip');
+        let visibleCount = 0;
+
+        chips.forEach(chip => {
+            const filterKey = chip.dataset.filter;
+            const filterVal = chip.dataset.value;
+
+            // Count how many products would match if this option were considered,
+            // applying all OTHER current filter selections
+            const count = countMatchesForOption(baseProducts, filterKey, filterVal);
+            const isActive = chip.classList.contains('active');
+
+            if (count === 0 && !isActive) {
+                chip.classList.add('filter-unavailable');
+            } else {
+                chip.classList.remove('filter-unavailable');
+                visibleCount++;
+            }
+        });
+
+        // Hide entire group if no options are available (and none are selected)
+        const hasActiveChips = state.filters[config.key].length > 0;
+        groupEl.classList.toggle('filter-hidden', visibleCount === 0 && !hasActiveChips);
+    });
+}
+
+// ─── Count matches for a specific filter option ─────────────
+function countMatchesForOption(baseProducts, targetKey, targetValue) {
+    return baseProducts.filter(product => {
+        // Check all OTHER active filters (not targetKey)
+        for (const [key, selected] of Object.entries(state.filters)) {
+            if (key === targetKey) continue;
+            if (selected.length === 0) continue;
+
+            const val = product[key];
+            if (key === 'effektmaaling') {
+                if (val === null || !selected.includes(val)) return false;
+            } else if (key === 'antal_kanaler') {
+                if (val === null || !selected.map(Number).includes(val)) return false;
+            } else {
+                const arr = val || [];
+                if (arr.length === 0 || !arr.some(item => selected.includes(item))) return false;
+            }
+        }
+
+        // Check if this product matches the target option
+        const val = product[targetKey];
+        if (targetKey === 'effektmaaling') {
+            return val === targetValue;
+        } else if (targetKey === 'antal_kanaler') {
+            return val === Number(targetValue);
+        } else {
+            const arr = val || [];
+            return arr.includes(targetValue);
+        }
+    }).length;
 }
 
 // ─── Update preview count ───────────────────────────────────
@@ -510,6 +578,7 @@ function bindEvents() {
         }
 
         updateConditionalFilters();
+        updateFilterAvailability();
         updatePreviewCount();
     });
 

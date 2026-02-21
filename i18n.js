@@ -239,6 +239,47 @@ const TRANSLATIONS = {
         en: 'How many channels do you need?'
     },
 
+    // ─── Filter chip values ─────────────────────
+    // type_lysstyring values (0/1-10V and DALI are universal — no translation needed)
+    'fv_Fasedæmp (standard lysdæmpning)': {
+        da: 'Fasedæmp (standard lysdæmpning)', sv: 'Fasdimmer (standard ljusdämpning)', no: 'Fasedimming (standard lysdimming)',
+        fi: 'Vaihehimmennin (tavallinen himmennys)', de: 'Phasendimmer (Standard-Dimmung)', en: 'Phase dimming (standard dimming)'
+    },
+    'fv_LED-bånd': {
+        da: 'LED-bånd', sv: 'LED-band', no: 'LED-bånd',
+        fi: 'LED-nauha', de: 'LED-Streifen', en: 'LED strip'
+    },
+    'fv_Lavvoltsbelysning (12V/24V)': {
+        da: 'Lavvoltsbelysning (12V/24V)', sv: 'Lågvoltsbelysning (12V/24V)', no: 'Lavspenningsbelysning (12V/24V)',
+        fi: 'Pienjännitevalaistus (12V/24V)', de: 'Niedervoltbeleuchtung (12V/24V)', en: 'Low voltage lighting (12V/24V)'
+    },
+    'fv_Lysstyring (tænd/sluk)': {
+        da: 'Lysstyring (tænd/sluk)', sv: 'Ljusstyrning (på/av)', no: 'Lysstyring (på/av)',
+        fi: 'Valaistuksen ohjaus (päälle/pois)', de: 'Lichtsteuerung (ein/aus)', en: 'Lighting control (on/off)'
+    },
+    // installationsmetode values
+    'fv_Dåsemontering (EU dåse)': {
+        da: 'Dåsemontering (EU dåse)', sv: 'Dosmontering (EU-dosa)', no: 'Dosemontering (EU-boks)',
+        fi: 'Rasiaasennus (EU-rasia)', de: 'Dosenmontage (EU-Dose)', en: 'Box mounting (EU box)'
+    },
+    'fv_Indbygning (bag kontakt eller i dåse)': {
+        da: 'Indbygning (bag kontakt eller i dåse)', sv: 'Infälld montering (bakom strömbrytare eller i dosa)', no: 'Innbygging (bak bryter eller i boks)',
+        fi: 'Uppoasennus (kytkimen taakse tai rasiaan)', de: 'Einbau (hinter Schalter oder in Dose)', en: 'Flush mounting (behind switch or in box)'
+    },
+    'fv_Tavlemontering (DIN-skinne)': {
+        da: 'Tavlemontering (DIN-skinne)', sv: 'Centralmontering (DIN-skena)', no: 'Tavlemontering (DIN-skinne)',
+        fi: 'Keskusasennus (DIN-kisko)', de: 'Hutschienenmontage (DIN-Schiene)', en: 'DIN rail mounting'
+    },
+    // effektmaaling values
+    fv_Ja: {
+        da: 'Ja', sv: 'Ja', no: 'Ja',
+        fi: 'Kyllä', de: 'Ja', en: 'Yes'
+    },
+    fv_Nej: {
+        da: 'Nej', sv: 'Nej', no: 'Nei',
+        fi: 'Ei', de: 'Nein', en: 'No'
+    },
+
     // ─── Spec labels ────────────────────────────
     specChannels: {
         da: 'Kanaler', sv: 'Kanaler', no: 'Kanaler',
@@ -426,6 +467,13 @@ function tUseCase(originalName) {
     const entry = TRANSLATIONS[key];
     if (!entry) return originalName;
     return entry[currentLang] || entry['en'] || originalName;
+}
+
+function tFilterValue(value) {
+    const key = 'fv_' + value;
+    const entry = TRANSLATIONS[key];
+    if (!entry) return value;  // Technical values (voltages, protocols, numbers) pass through
+    return entry[currentLang] || entry['en'] || value;
 }
 
 function tUseCaseDesc(originalName) {

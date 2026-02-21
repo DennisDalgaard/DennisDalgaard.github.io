@@ -457,6 +457,9 @@ body {
     display: inline-flex;
 }
 .filter-chip.active .chip-check svg { stroke: var(--color-white); }
+.filter-chip.filter-unavailable {
+    display: none;
+}
 
 /* ============================================
    Buttons
