@@ -43,43 +43,48 @@ const PRODUCT_KB_URLS = {
     'Shelly Pro EM - 50A': 'https://kb.shelly.cloud/knowledge-base/shelly-pro-em-50'
 };
 
-const PRODUCT_IMAGES = {
-    'Shelly Wall Display': 'https://www.shelly.com/cdn/shop/files/Wall_Display_Front_W_300x300.webp',
-    'Shelly Wall Display X2i': 'https://www.shelly.com/cdn/shop/files/Wall_Display_X2i_B_Front_300x300.webp',
-    'Shelly Wall Display XL': 'https://www.shelly.com/cdn/shop/files/Wall_Display_XL_B_Front_300x300.webp',
-    'Shelly Plus RGBW PM': 'https://www.shelly.com/cdn/shop/files/plus-rgbw-pm_300x300.webp',
-    'Shelly Plus I4 DC': 'https://www.shelly.com/cdn/shop/files/Plus_i4_DC_300x300.webp',
-    'Shelly i4 Gen3': 'https://www.shelly.com/cdn/shop/files/i4_Gen3_300x300.webp',
-    'Shelly Dimmer 0/1-10V PM Gen3': 'https://www.shelly.com/cdn/shop/files/Dimmer_0_10V_Gen3_300x300.webp',
-    'Shelly DALI Dimmer Gen3': 'https://www.shelly.com/cdn/shop/files/DALI_Dimmer_Gen3_300x300.webp',
-    'Shelly 1L Gen3': 'https://www.shelly.com/cdn/shop/files/1L_Gen3_300x300.webp',
-    'Shelly 2L Gen3': 'https://www.shelly.com/cdn/shop/files/2L_Gen3_300x300.webp',
-    'Shelly Plus Uni': 'https://www.shelly.com/cdn/shop/files/Plus_Uni_300x300.webp',
-    'Shelly 1 Gen4': 'https://www.shelly.com/cdn/shop/files/1_Gen4_300x300.webp',
-    'Shelly 1PM Gen4': 'https://www.shelly.com/cdn/shop/files/1PM_Gen4_300x300.webp',
-    'Shelly 2PM Gen4': 'https://www.shelly.com/cdn/shop/files/2PM_Gen4_300x300.webp',
-    'Shelly Dimmer Gen4': 'https://www.shelly.com/cdn/shop/files/Dimmer_Gen4_300x300.webp',
-    'Shelly 1 Mini Gen4': 'https://www.shelly.com/cdn/shop/files/1_Mini_Gen4_300x300.webp',
-    'Shelly 1PM Mini Gen4': 'https://www.shelly.com/cdn/shop/files/1PM_Mini_Gen4_300x300.webp',
-    'Shelly EM Mini Gen4': 'https://www.shelly.com/cdn/shop/files/EM_Mini_Gen4_300x300.webp',
-    'Shelly Pro 1': 'https://www.shelly.com/cdn/shop/files/Pro_1_300x300.webp',
-    'Shelly Pro 2': 'https://www.shelly.com/cdn/shop/files/Pro_2_300x300.webp',
-    'Shelly Pro 1PM': 'https://www.shelly.com/cdn/shop/files/Pro_1PM_300x300.webp',
-    'Shelly Pro 2PM': 'https://www.shelly.com/cdn/shop/files/Pro_2PM_300x300.webp',
-    'Shelly Pro 3': 'https://www.shelly.com/cdn/shop/files/Pro_3_300x300.webp',
-    'Shelly Pro 4PM': 'https://www.shelly.com/cdn/shop/files/Pro_4PM_300x300.webp',
-    'Shelly Pro Dual Cover PM': 'https://www.shelly.com/cdn/shop/files/Pro_Dual_Cover_300x300.webp',
-    'Shelly Pro Dimmer 1PM': 'https://www.shelly.com/cdn/shop/files/Pro_Dimmer_1PM_300x300.webp',
-    'Shelly Pro Dimmer 2PM': 'https://www.shelly.com/cdn/shop/files/Pro_Dimmer_2PM_300x300.webp',
-    'Shelly Pro Dimmer 0/1-10V PM': 'https://www.shelly.com/cdn/shop/files/Pro_Dimmer_0_10V_300x300.webp',
-    'Shelly Pro RGBWW PM': 'https://www.shelly.com/cdn/shop/files/Pro_RGBWW_PM_300x300.webp',
-    'Shelly EM Gen3': 'https://www.shelly.com/cdn/shop/files/EM_Gen3_300x300.webp',
-    'Shelly 3EM-63T Gen3': 'https://www.shelly.com/cdn/shop/files/3EM_Gen3_300x300.webp',
-    'Shelly 3EM-63W Gen3': 'https://www.shelly.com/cdn/shop/files/3EM_Gen3_300x300.webp',
-    'Shelly Pro 3EM CT63': 'https://www.shelly.com/cdn/shop/files/Pro_3EM_300x300.webp',
-    'Shelly Pro 3EM 120A': 'https://www.shelly.com/cdn/shop/files/Pro_3EM_300x300.webp',
-    'Shelly Pro 3EM 400A': 'https://www.shelly.com/cdn/shop/files/Pro_3EM_400_300x300.webp',
-    'Shelly Pro EM - 50A': 'https://www.shelly.com/cdn/shop/files/Pro_EM_50_300x300.webp'
+// ─── Product images mapped by EAN code ──────────────────────
+// Images stored in Images/ folder, named: "01 - {EAN} - {Name}.webp"
+const PRODUCT_IMAGE_BY_EAN = {
+    '3800235264904': 'Images/01 - 3800235264904 - Shelly Wall Display Black + BLU H&T Black.webp',
+    '3800235264898': 'Images/01 - 3800235264898 - Shelly Wall Display White + BLU H&T Ivory.webp',
+    '3800238072766': 'Images/01 - 3800238072766 - Shelly Wall Display X2i Black.webp',
+    '3800238072773': 'Images/01 - 3800238072773 - Shelly Wall Display X2i Silver.webp',
+    '3800238073008': 'Images/01 - 3800238073008 - Shelly Wall Display XL Black.webp',
+    '3800238071691': 'Images/01 - 3800238071691 - Shelly Wall Display XL Silver.webp',
+    '3800235265635': 'Images/01 - 3800235265635 - Shelly Plus RGBW PM.webp',
+    '3800235265543': 'Images/01 - 3800235265543 - Shelly Plus I4 DC.webp',
+    '3800235261828': 'Images/01 - 3800235261828 - Shelly i4 Gen3.webp',
+    '3800235261750': 'Images/01 - 3800235261750 - Shelly Dimmer 0-10V PM Gen3.webp',
+    '3800235261866': 'Images/01 - 3800235261866 - Shelly DALI Dimmer Gen3.webp',
+    '3800235261637': 'Images/01 - 3800235261637 - Shelly 1L Gen3.webp',
+    '3800235261644': 'Images/01 - 3800235261644 - Shelly 2L Gen3.webp',
+    '3800235265710': 'Images/01 - 3800235265710 - Shelly Plus Uni.webp',
+    '3800238070687': 'Images/01 - 3800238070687 - Shelly 1 Gen4.webp',
+    '3800238070717': 'Images/01 - 3800238070717 - Shelly 1PM Gen4.webp',
+    '3800238070748': 'Images/01 - 3800238070748 - Shelly 2PM Gen4.webp',
+    '3800238072353': 'Images/01 - 3800238072353 - Shelly Dimmer Gen4.webp',
+    '3800238070786': 'Images/01 - 3800238070786 - Shelly 1 Mini Gen4.webp',
+    '3800238070809': 'Images/01 - 3800238070809 - Shelly 1PM Mini Gen4.webp',
+    '3800238070823': 'Images/01 - 3800238070823 - Shelly EM Mini Gen4.webp',
+    '3800235268001': 'Images/01 - 3800235268001 - Shelly Pro 1.webp',
+    '3800235268025': 'Images/01 - 3800235268025 - Shelly Pro 2.webp',
+    '3800235268018': 'Images/01 - 3800235268018 - Shelly Pro 1PM.webp',
+    '3800235268032': 'Images/01 - 3800235268032 - Shelly Pro 2PM.webp',
+    '3800235268094': 'Images/01 - 3800235268094 - Shelly Pro 3.webp',
+    '3800235268049': 'Images/01 - 3800235268049 - Shelly Pro 4PM.webp',
+    '3800235268124': 'Images/01 - 3800235268124 - Shelly Pro Dual Cover PM.webp',
+    '3800235268162': 'Images/01 - 3800235268162 - Shelly Pro Dimmer 1PM.webp',
+    '3800235268179': 'Images/01 - 3800235268179 - Shelly Pro Dimmer 2PM.webp',
+    '3800235268209': 'Images/01 - 3800235268209 - Shelly Pro Dimmer 01-10V PM.webp',
+    '3800235268216': 'Images/01 - 3800235268216 - Shelly Pro RGBWW PM.webp',
+    '3800235261873': 'Images/01 - 3800235261873 - Shelly EM Gen3.webp',
+    '3800235261941': 'Images/01 - 3800235261941 - Shelly 3EM-63T Gen3 (flat terminal model).webp',
+    '3800235261958': 'Images/01 - 3800235261958 - Shelly 3EM-63W Gen3 (wire model).webp',
+    '3800235268193': 'Images/01 - 3800235268193 - Shelly Pro 3EM CT63.webp',
+    '3800235268100': 'Images/01 - 3800235268100 - Shelly Pro 3EM 120A.webp',
+    '3800235268117': 'Images/01 - 3800235268117 - Shelly Pro 3EM 400A.webp',
+    '3800235268148': 'Images/01 - 3800235268148 - Shelly Pro EM - 50A (with 2 50A CT).webp'
 };
 
 // ─── State ──────────────────────────────────────────────────
@@ -176,13 +181,9 @@ function getProductKbUrl(productName) {
     return `https://kb.shelly.cloud/knowledge-base/${slug}`;
 }
 
-// ─── Get image URL for product ──────────────────────────────
-function getProductImage(productName) {
-    if (PRODUCT_IMAGES[productName]) return PRODUCT_IMAGES[productName];
-    for (const [key, url] of Object.entries(PRODUCT_IMAGES)) {
-        if (productName.includes(key)) return url;
-    }
-    return null;
+// ─── Get image URL for product (by EAN) ─────────────────────
+function getProductImage(ean) {
+    return PRODUCT_IMAGE_BY_EAN[ean] || null;
 }
 
 // ─── Render: Use Cases (Step 1) ─────────────────────────────
@@ -322,9 +323,10 @@ function renderResults() {
     grid.innerHTML = results.map(product => {
         const series = extractSeries(product.navn);
         const kbUrl = getProductKbUrl(product.navn);
-        const imgUrl = getProductImage(product.navn);
-        const imgHtml = imgUrl
-            ? `<div class="result-card-image"><img src="${imgUrl}" alt="${product.navn}" loading="lazy" onerror="this.parentElement.classList.add('img-error')"></div>`
+        const imgUrl = getProductImage(product.ean);
+        const encodedImgUrl = imgUrl ? encodeURI(imgUrl) : null;
+        const imgHtml = encodedImgUrl
+            ? `<div class="result-card-image"><img src="${encodedImgUrl}" alt="${product.navn}" loading="lazy" onerror="this.parentElement.classList.add('img-error')"></div>`
             : `<div class="result-card-image img-error"><div class="img-placeholder">${series || '📦'}</div></div>`;
 
         return `
