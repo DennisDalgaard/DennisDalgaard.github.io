@@ -521,19 +521,21 @@ function updatePreviewCount() {
 
 // ─── Event Binding ──────────────────────────────────────────
 function bindEvents() {
-    // Use case selection (multi-select)
+    // Use case selection (single-select)
     document.getElementById('usecaseGrid').addEventListener('click', (e) => {
         const card = e.target.closest('.usecase-card');
         if (!card) return;
 
         const uc = card.dataset.usecase;
-        const idx = state.selectedUseCases.indexOf(uc);
 
-        if (idx > -1) {
-            state.selectedUseCases.splice(idx, 1);
+        if (card.classList.contains('selected')) {
+            // Deselect
+            state.selectedUseCases = [];
             card.classList.remove('selected');
         } else {
-            state.selectedUseCases.push(uc);
+            // Deselect previous, select new
+            document.querySelectorAll('.usecase-card.selected').forEach(c => c.classList.remove('selected'));
+            state.selectedUseCases = [uc];
             card.classList.add('selected');
         }
 

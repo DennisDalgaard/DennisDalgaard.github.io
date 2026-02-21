@@ -63,12 +63,12 @@ const TRANSLATIONS = {
         en: 'What will the device be used for?'
     },
     step1Desc: {
-        da: 'Vælg en eller flere anvendelser der beskriver dit projekt.',
-        sv: 'Välj ett eller flera användningsområden som beskriver ditt projekt.',
-        no: 'Velg en eller flere bruksområder som beskriver prosjektet ditt.',
-        fi: 'Valitse yksi tai useampi käyttötarkoitus joka kuvaa projektiasi.',
-        de: 'Wähle einen oder mehrere Anwendungsbereiche, die dein Projekt beschreiben.',
-        en: 'Select one or more use cases that describe your project.'
+        da: 'Vælg den anvendelse der bedst beskriver dit projekt.',
+        sv: 'Välj det användningsområde som bäst beskriver ditt projekt.',
+        no: 'Velg bruksområdet som best beskriver prosjektet ditt.',
+        fi: 'Valitse käyttötarkoitus joka parhaiten kuvaa projektiasi.',
+        de: 'Wähle den Anwendungsbereich, der dein Projekt am besten beschreibt.',
+        en: 'Select the use case that best describes your project.'
     },
 
     // ─── Step 2 ─────────────────────────────────
