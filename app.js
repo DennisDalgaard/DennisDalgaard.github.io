@@ -87,6 +87,16 @@ const PRODUCT_IMAGE_BY_EAN = {
     '3800235268148': 'Images/01 - 3800235268148 - Shelly Pro EM - 50A (with 2 50A CT).webp'
 };
 
+// ─── Solution Guides (use case → URL) ───────────────────────
+const SOLUTION_GUIDES = {
+    'Varmestyring': 'https://shelly.guide/application-guide/underfloor-heating/',
+    'Varmepumpe': 'https://shelly.guide/application-guide/heat-pump-control/',
+    'Garageport': 'https://shelly.guide/application-guide/garage-door-control/',
+    'Lysstyring': 'https://shelly.guide/application-guide/lighting-control/',
+    'Adgangskontrol': 'https://shelly.guide/application-guide/access-control/',
+    'Solafskærmning': 'https://shelly.guide/application-guide/blinds-roller-shutters/'
+};
+
 // ─── State ──────────────────────────────────────────────────
 let products = [];
 let state = {
@@ -94,6 +104,7 @@ let state = {
     selectedUseCases: [],
     filters: {
         type_lysstyring: [],
+        type_varmestyring: [],
         installationsmetode: [],
         forsyningsspaending: [],
         protokol: [],
@@ -108,7 +119,15 @@ const filterConfig = [
         key: 'type_lysstyring',
         icon: '💡',
         conditional: true,
+        showForUseCases: ['Lysstyring'],
         values: ['0/1-10V', 'DALI', 'Fasedæmp (standard lysdæmpning)', 'LED-bånd', 'Lavvoltsbelysning (12V/24V)', 'Lysstyring (tænd/sluk)']
+    },
+    {
+        key: 'type_varmestyring',
+        icon: '🌡️',
+        conditional: true,
+        showForUseCases: ['Varmestyring'],
+        values: ['Decentral styring 230V', 'Central styring 230V', 'Central styring 12/24V']
     },
     {
         key: 'installationsmetode',
@@ -236,11 +255,17 @@ function renderFilters() {
 
 // ─── Should show conditional filter ─────────────────────────
 function shouldShowFilter(key) {
-    if (key !== 'type_lysstyring') return true;
-    if (state.filters.type_lysstyring.length > 0) return true;
-    // Show if any product matching current use cases has type_lysstyring
+    const config = filterConfig.find(c => c.key === key);
+    if (!config || !config.conditional) return true;
+    // Always show if user already has selections in this filter
+    if (state.filters[key] && state.filters[key].length > 0) return true;
+    // Show if the selected use case matches
+    if (config.showForUseCases) {
+        return state.selectedUseCases.some(uc => config.showForUseCases.includes(uc));
+    }
+    // Fallback: show if any matching product has values for this filter
     const useCaseFiltered = filterByUseCases();
-    return useCaseFiltered.some(p => p.type_lysstyring && p.type_lysstyring.length > 0);
+    return useCaseFiltered.some(p => p[key] && p[key].length > 0);
 }
 
 // ─── Filter: By use cases only ──────────────────────────────
@@ -314,6 +339,8 @@ function renderResults() {
     if (results.length === 0) {
         grid.style.display = 'none';
         noRes.style.display = 'flex';
+        const guideEl = document.getElementById('solutionGuide');
+        if (guideEl) guideEl.style.display = 'none';
         return;
     }
 
@@ -381,6 +408,39 @@ function renderResults() {
             </div>
         </div>`;
     }).join('');
+
+    // Solution guide banner
+    renderSolutionGuide();
+}
+
+// ─── Render: Solution Guide Banner ──────────────────────────
+function renderSolutionGuide() {
+    const guideEl = document.getElementById('solutionGuide');
+    if (!guideEl) return;
+
+    // Find if the selected use case has a guide
+    const uc = state.selectedUseCases[0];
+    const guideUrl = uc ? SOLUTION_GUIDES[uc] : null;
+
+    if (!guideUrl) {
+        guideEl.style.display = 'none';
+        return;
+    }
+
+    guideEl.style.display = 'flex';
+    guideEl.innerHTML = `
+        <div class="guide-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+        </div>
+        <div class="guide-content">
+            <div class="guide-title">${t('guideTitle')}</div>
+            <div class="guide-desc">${t('guideDesc').replace('{usecase}', tUseCase(uc))}</div>
+        </div>
+        <a class="guide-link" href="${guideUrl}" target="_blank" rel="noopener">
+            ${t('guideLink')}
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+    `;
 }
 
 function extractSeries(name) {
@@ -425,6 +485,7 @@ function resetAll() {
     state.selectedUseCases = [];
     state.filters = {
         type_lysstyring: [],
+        type_varmestyring: [],
         installationsmetode: [],
         forsyningsspaending: [],
         protokol: [],
@@ -440,9 +501,12 @@ function resetAll() {
 
 // ─── Update conditional filters ─────────────────────────────
 function updateConditionalFilters() {
-    const group = document.getElementById('filterGroup_type_lysstyring');
-    if (!group) return;
-    group.classList.toggle('filter-hidden', !shouldShowFilter('type_lysstyring'));
+    filterConfig.forEach(config => {
+        if (!config.conditional) return;
+        const group = document.getElementById('filterGroup_' + config.key);
+        if (!group) return;
+        group.classList.toggle('filter-hidden', !shouldShowFilter(config.key));
+    });
 }
 
 // ─── Update filter availability (hide zero-result options) ──

@@ -701,6 +701,62 @@ body {
     color: var(--color-primary-dark);
 }
 
+/* ─── Solution Guide Banner ──────────────────── */
+.solution-guide {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 24px;
+    padding: 20px 24px;
+    background: linear-gradient(135deg, var(--color-accent-light) 0%, #d4f5e0 100%);
+    border: 1px solid #b8e8c8;
+    border-radius: var(--radius-lg);
+}
+.guide-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: var(--radius-md);
+    background: rgba(0, 200, 83, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #1B7A3D;
+}
+.guide-content {
+    flex: 1;
+}
+.guide-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #1B7A3D;
+    margin-bottom: 2px;
+}
+.guide-desc {
+    font-size: 13px;
+    color: #2D6A3E;
+}
+.guide-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 18px;
+    background: #1B7A3D;
+    color: var(--color-white);
+    border-radius: var(--radius-full);
+    font-size: 13px;
+    font-weight: 600;
+    font-family: var(--font-family);
+    text-decoration: none;
+    white-space: nowrap;
+    transition: all var(--transition-fast);
+}
+.guide-link:hover {
+    background: #155F2F;
+    box-shadow: var(--shadow-md);
+    transform: translateY(-1px);
+}
+
 /* ─── No Results ─────────────────────────────── */
 .no-results {
     display: flex;
@@ -752,6 +808,10 @@ body {
     .filters-container { grid-template-columns: 1fr; }
     .results-grid { grid-template-columns: 1fr; }
     .main { padding: 24px 16px 60px; }
+    .solution-guide {
+        flex-direction: column;
+        text-align: center;
+    }
     .step-actions {
         flex-direction: column-reverse;
         align-items: stretch;

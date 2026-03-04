@@ -5,13 +5,25 @@
     "fi_enummer": "2807416",
     "no_elnummer": "4542652",
     "navn": "Shelly Wall Display Black + BLU H&T Black",
-    "anvendelse": ["Kontrolpanel", "Varmestyring"],
+    "anvendelse": [
+      "Kontrolpanel",
+      "Varmestyring"
+    ],
     "type_lysstyring": [],
-    "installationsmetode": ["Dåsemontering (EU dåse)"],
-    "forsyningsspaending": ["200-240V AC"],
+    "type_varmestyring": [
+      "Decentral styring 230V"
+    ],
+    "installationsmetode": [
+      "Dåsemontering (EU dåse)"
+    ],
+    "forsyningsspaending": [
+      "200-240V AC"
+    ],
     "effektmaaling": "Nej",
     "antal_kanaler": 1,
-    "protokol": ["WiFi"]
+    "protokol": [
+      "WiFi"
+    ]
   },
   {
     "ean": "3800235264898",
@@ -19,13 +31,25 @@
     "fi_enummer": "2807417",
     "no_elnummer": "4542653",
     "navn": "Shelly Wall Display White + BLU H&T Ivory",
-    "anvendelse": ["Kontrolpanel", "Varmestyring"],
+    "anvendelse": [
+      "Kontrolpanel",
+      "Varmestyring"
+    ],
     "type_lysstyring": [],
-    "installationsmetode": ["Dåsemontering (EU dåse)"],
-    "forsyningsspaending": ["200-240V AC"],
+    "type_varmestyring": [
+      "Decentral styring 230V"
+    ],
+    "installationsmetode": [
+      "Dåsemontering (EU dåse)"
+    ],
+    "forsyningsspaending": [
+      "200-240V AC"
+    ],
     "effektmaaling": "Nej",
     "antal_kanaler": 1,
-    "protokol": ["WiFi"]
+    "protokol": [
+      "WiFi"
+    ]
   },
   {
     "ean": "3800238072766",
@@ -33,13 +57,25 @@
     "fi_enummer": "2807453",
     "no_elnummer": null,
     "navn": "Shelly Wall Display X2i Black",
-    "anvendelse": ["Kontrolpanel", "Varmestyring"],
+    "anvendelse": [
+      "Kontrolpanel",
+      "Varmestyring"
+    ],
     "type_lysstyring": [],
-    "installationsmetode": ["Dåsemontering (EU dåse)"],
-    "forsyningsspaending": ["200-240V AC"],
+    "type_varmestyring": [
+      "Decentral styring 230V"
+    ],
+    "installationsmetode": [
+      "Dåsemontering (EU dåse)"
+    ],
+    "forsyningsspaending": [
+      "200-240V AC"
+    ],
     "effektmaaling": "Nej",
     "antal_kanaler": 1,
-    "protokol": ["WiFi"]
+    "protokol": [
+      "WiFi"
+    ]
   },
   {
     "ean": "3800238072773",
@@ -47,13 +83,25 @@
     "fi_enummer": "2807454",
     "no_elnummer": null,
     "navn": "Shelly Wall Display X2i Silver",
-    "anvendelse": ["Kontrolpanel", "Varmestyring"],
+    "anvendelse": [
+      "Kontrolpanel",
+      "Varmestyring"
+    ],
     "type_lysstyring": [],
-    "installationsmetode": ["Dåsemontering (EU dåse)"],
-    "forsyningsspaending": ["200-240V AC"],
+    "type_varmestyring": [
+      "Decentral styring 230V"
+    ],
+    "installationsmetode": [
+      "Dåsemontering (EU dåse)"
+    ],
+    "forsyningsspaending": [
+      "200-240V AC"
+    ],
     "effektmaaling": "Nej",
     "antal_kanaler": 1,
-    "protokol": ["WiFi"]
+    "protokol": [
+      "WiFi"
+    ]
   },
   {
     "ean": "3800238073008",
@@ -61,13 +109,25 @@
     "fi_enummer": "2807433",
     "no_elnummer": "4542265",
     "navn": "Shelly Wall Display XL Black",
-    "anvendelse": ["Kontrolpanel", "Varmestyring"],
+    "anvendelse": [
+      "Kontrolpanel",
+      "Varmestyring"
+    ],
     "type_lysstyring": [],
-    "installationsmetode": ["Dåsemontering (EU dåse)"],
-    "forsyningsspaending": ["200-240V AC"],
+    "type_varmestyring": [
+      "Decentral styring 230V"
+    ],
+    "installationsmetode": [
+      "Dåsemontering (EU dåse)"
+    ],
+    "forsyningsspaending": [
+      "200-240V AC"
+    ],
     "effektmaaling": "Nej",
     "antal_kanaler": 1,
-    "protokol": ["WiFi"]
+    "protokol": [
+      "WiFi"
+    ]
   },
   {
     "ean": "3800238071691",
@@ -75,13 +135,25 @@
     "fi_enummer": "2807434",
     "no_elnummer": "4542266",
     "navn": "Shelly Wall Display XL Silver",
-    "anvendelse": ["Kontrolpanel", "Varmestyring"],
+    "anvendelse": [
+      "Kontrolpanel",
+      "Varmestyring"
+    ],
     "type_lysstyring": [],
-    "installationsmetode": ["Dåsemontering (EU dåse)"],
-    "forsyningsspaending": ["200-240V AC"],
+    "type_varmestyring": [
+      "Decentral styring 230V"
+    ],
+    "installationsmetode": [
+      "Dåsemontering (EU dåse)"
+    ],
+    "forsyningsspaending": [
+      "200-240V AC"
+    ],
     "effektmaaling": "Nej",
     "antal_kanaler": 1,
-    "protokol": ["WiFi"]
+    "protokol": [
+      "WiFi"
+    ]
   },
   {
     "ean": "3800235265635",
@@ -89,13 +161,27 @@
     "fi_enummer": "2616139",
     "no_elnummer": "4542655",
     "navn": "Shelly Plus RGBW PM",
-    "anvendelse": ["Lysstyring"],
-    "type_lysstyring": ["LED-bånd", "Lavvoltsbelysning (12V/24V)"],
-    "installationsmetode": ["Indbygning (bag kontakt eller i dåse)"],
-    "forsyningsspaending": ["12V DC", "24V DC"],
+    "anvendelse": [
+      "Lysstyring"
+    ],
+    "type_lysstyring": [
+      "LED-bånd",
+      "Lavvoltsbelysning (12V/24V)"
+    ],
+    "type_varmestyring": [],
+    "installationsmetode": [
+      "Indbygning (bag kontakt eller i dåse)"
+    ],
+    "forsyningsspaending": [
+      "12V DC",
+      "24V DC"
+    ],
     "effektmaaling": "Ja",
     "antal_kanaler": 4,
-    "protokol": ["WiFi", "Bluetooth"]
+    "protokol": [
+      "WiFi",
+      "Bluetooth"
+    ]
   },
   {
     "ean": "3800235265543",
@@ -103,13 +189,23 @@
     "fi_enummer": "2616107",
     "no_elnummer": "4542656",
     "navn": "Shelly Plus I4 DC",
-    "anvendelse": ["Inputlæser for afbrydere, sensorer og lignende"],
+    "anvendelse": [
+      "Inputlæser for afbrydere, sensorer og lignende"
+    ],
     "type_lysstyring": [],
-    "installationsmetode": ["Indbygning (bag kontakt eller i dåse)"],
-    "forsyningsspaending": ["12V DC", "24V DC"],
+    "type_varmestyring": [],
+    "installationsmetode": [
+      "Indbygning (bag kontakt eller i dåse)"
+    ],
+    "forsyningsspaending": [
+      "12V DC",
+      "24V DC"
+    ],
     "effektmaaling": null,
     "antal_kanaler": 4,
-    "protokol": ["WiFi"]
+    "protokol": [
+      "WiFi"
+    ]
   },
   {
     "ean": "3800235261828",
@@ -117,13 +213,22 @@
     "fi_enummer": "2624301",
     "no_elnummer": "4542661",
     "navn": "Shelly i4 Gen3",
-    "anvendelse": ["Inputlæser for afbrydere, sensorer og lignende"],
+    "anvendelse": [
+      "Inputlæser for afbrydere, sensorer og lignende"
+    ],
     "type_lysstyring": [],
-    "installationsmetode": ["Indbygning (bag kontakt eller i dåse)"],
-    "forsyningsspaending": ["200-240V AC"],
+    "type_varmestyring": [],
+    "installationsmetode": [
+      "Indbygning (bag kontakt eller i dåse)"
+    ],
+    "forsyningsspaending": [
+      "200-240V AC"
+    ],
     "effektmaaling": null,
     "antal_kanaler": 4,
-    "protokol": ["WiFi"]
+    "protokol": [
+      "WiFi"
+    ]
   },
   {
     "ean": "3800235261750",
@@ -131,13 +236,27 @@
     "fi_enummer": "2624304",
     "no_elnummer": "4542663",
     "navn": "Shelly Dimmer 0/1-10V PM Gen3",
-    "anvendelse": ["Lysstyring", "Motorstyring", "Hastighedsstyring af ventilatorer"],
-    "type_lysstyring": ["0/1-10V"],
-    "installationsmetode": ["Indbygning (bag kontakt eller i dåse)"],
-    "forsyningsspaending": ["200-240V AC"],
+    "anvendelse": [
+      "Lysstyring",
+      "Motorstyring",
+      "Hastighedsstyring af ventilatorer"
+    ],
+    "type_lysstyring": [
+      "0/1-10V"
+    ],
+    "type_varmestyring": [],
+    "installationsmetode": [
+      "Indbygning (bag kontakt eller i dåse)"
+    ],
+    "forsyningsspaending": [
+      "200-240V AC"
+    ],
     "effektmaaling": "Ja",
     "antal_kanaler": 1,
-    "protokol": ["WiFi", "Bluetooth"]
+    "protokol": [
+      "WiFi",
+      "Bluetooth"
+    ]
   },
   {
     "ean": "3800235261866",
@@ -145,13 +264,25 @@
     "fi_enummer": "2616143",
     "no_elnummer": "4542664",
     "navn": "Shelly DALI Dimmer Gen3",
-    "anvendelse": ["Lysstyring"],
-    "type_lysstyring": ["DALI"],
-    "installationsmetode": ["Indbygning (bag kontakt eller i dåse)"],
-    "forsyningsspaending": ["200-240V AC"],
+    "anvendelse": [
+      "Lysstyring"
+    ],
+    "type_lysstyring": [
+      "DALI"
+    ],
+    "type_varmestyring": [],
+    "installationsmetode": [
+      "Indbygning (bag kontakt eller i dåse)"
+    ],
+    "forsyningsspaending": [
+      "200-240V AC"
+    ],
     "effektmaaling": "Nej",
     "antal_kanaler": 1,
-    "protokol": ["WiFi", "Bluetooth"]
+    "protokol": [
+      "WiFi",
+      "Bluetooth"
+    ]
   },
   {
     "ean": "3800235261637",
@@ -159,13 +290,25 @@
     "fi_enummer": "2616159",
     "no_elnummer": "4542267",
     "navn": "Shelly 1L Gen3",
-    "anvendelse": ["Lysstyring"],
-    "type_lysstyring": ["Lysstyring (tænd/sluk)"],
-    "installationsmetode": ["Indbygning (bag kontakt eller i dåse)"],
-    "forsyningsspaending": ["200-240V AC"],
+    "anvendelse": [
+      "Lysstyring"
+    ],
+    "type_lysstyring": [
+      "Lysstyring (tænd/sluk)"
+    ],
+    "type_varmestyring": [],
+    "installationsmetode": [
+      "Indbygning (bag kontakt eller i dåse)"
+    ],
+    "forsyningsspaending": [
+      "200-240V AC"
+    ],
     "effektmaaling": "Nej",
     "antal_kanaler": 1,
-    "protokol": ["WiFi", "Bluetooth"]
+    "protokol": [
+      "WiFi",
+      "Bluetooth"
+    ]
   },
   {
     "ean": "3800235261644",
@@ -173,13 +316,25 @@
     "fi_enummer": "2616158",
     "no_elnummer": "4542268",
     "navn": "Shelly 2L Gen3",
-    "anvendelse": ["Lysstyring"],
-    "type_lysstyring": ["Lysstyring (tænd/sluk)"],
-    "installationsmetode": ["Indbygning (bag kontakt eller i dåse)"],
-    "forsyningsspaending": ["200-240V AC"],
+    "anvendelse": [
+      "Lysstyring"
+    ],
+    "type_lysstyring": [
+      "Lysstyring (tænd/sluk)"
+    ],
+    "type_varmestyring": [],
+    "installationsmetode": [
+      "Indbygning (bag kontakt eller i dåse)"
+    ],
+    "forsyningsspaending": [
+      "200-240V AC"
+    ],
     "effektmaaling": "Nej",
     "antal_kanaler": 2,
-    "protokol": ["WiFi", "Bluetooth"]
+    "protokol": [
+      "WiFi",
+      "Bluetooth"
+    ]
   },
   {
     "ean": "3800235265710",
@@ -187,13 +342,26 @@
     "fi_enummer": "2807412",
     "no_elnummer": "4542667",
     "navn": "Shelly Plus Uni",
-    "anvendelse": ["Garageport", "Adgangskontrol"],
+    "anvendelse": [
+      "Garageport",
+      "Adgangskontrol"
+    ],
     "type_lysstyring": [],
-    "installationsmetode": ["Indbygning (bag kontakt eller i dåse)"],
-    "forsyningsspaending": ["8-24 VAC", "9-28 VDC", "5 VDC"],
+    "type_varmestyring": [],
+    "installationsmetode": [
+      "Indbygning (bag kontakt eller i dåse)"
+    ],
+    "forsyningsspaending": [
+      "8-24 VAC",
+      "9-28 VDC",
+      "5 VDC"
+    ],
     "effektmaaling": "Ja",
     "antal_kanaler": 2,
-    "protokol": ["WiFi", "Bluetooth"]
+    "protokol": [
+      "WiFi",
+      "Bluetooth"
+    ]
   },
   {
     "ean": "3800238070687",
@@ -201,13 +369,29 @@
     "fi_enummer": "2616154",
     "no_elnummer": "4542269",
     "navn": "Shelly 1 Gen4",
-    "anvendelse": ["Garageport", "Varmepumpe", "Adgangskontrol"],
+    "anvendelse": [
+      "Garageport",
+      "Varmepumpe",
+      "Adgangskontrol"
+    ],
     "type_lysstyring": [],
-    "installationsmetode": ["Indbygning (bag kontakt eller i dåse)"],
-    "forsyningsspaending": ["200-240V AC", "12V DC", "24V DC"],
+    "type_varmestyring": [],
+    "installationsmetode": [
+      "Indbygning (bag kontakt eller i dåse)"
+    ],
+    "forsyningsspaending": [
+      "200-240V AC",
+      "12V DC",
+      "24V DC"
+    ],
     "effektmaaling": "Nej",
     "antal_kanaler": 1,
-    "protokol": ["WiFi", "Bluetooth", "Matter", "Zigbee"]
+    "protokol": [
+      "WiFi",
+      "Bluetooth",
+      "Matter",
+      "Zigbee"
+    ]
   },
   {
     "ean": "3800238070717",
@@ -215,13 +399,34 @@
     "fi_enummer": "2616150",
     "no_elnummer": "4542270",
     "navn": "Shelly 1PM Gen4",
-    "anvendelse": ["Lysstyring", "Ventilatorer", "Pumper", "Stikkontakter"],
-    "type_lysstyring": ["Lysstyring (tænd/sluk)"],
-    "installationsmetode": ["Indbygning (bag kontakt eller i dåse)"],
-    "forsyningsspaending": ["200-240V AC", "24V DC"],
+    "anvendelse": [
+      "Lysstyring",
+      "Ventilatorer",
+      "Pumper",
+      "Stikkontakter",
+      "Varmestyring"
+    ],
+    "type_lysstyring": [
+      "Lysstyring (tænd/sluk)"
+    ],
+    "type_varmestyring": [
+      "Decentral styring 230V"
+    ],
+    "installationsmetode": [
+      "Indbygning (bag kontakt eller i dåse)"
+    ],
+    "forsyningsspaending": [
+      "200-240V AC",
+      "24V DC"
+    ],
     "effektmaaling": "Ja",
     "antal_kanaler": 1,
-    "protokol": ["WiFi", "Bluetooth", "Matter", "Zigbee"]
+    "protokol": [
+      "WiFi",
+      "Bluetooth",
+      "Matter",
+      "Zigbee"
+    ]
   },
   {
     "ean": "3800238070748",
@@ -229,13 +434,31 @@
     "fi_enummer": "2616151",
     "no_elnummer": "4542271",
     "navn": "Shelly 2PM Gen4",
-    "anvendelse": ["Lysstyring", "Ventilatorer", "Pumper", "Solafskærmning"],
-    "type_lysstyring": ["Lysstyring (tænd/sluk)"],
-    "installationsmetode": ["Indbygning (bag kontakt eller i dåse)"],
-    "forsyningsspaending": ["200-240V AC", "24V DC"],
+    "anvendelse": [
+      "Lysstyring",
+      "Ventilatorer",
+      "Pumper",
+      "Solafskærmning"
+    ],
+    "type_lysstyring": [
+      "Lysstyring (tænd/sluk)"
+    ],
+    "type_varmestyring": [],
+    "installationsmetode": [
+      "Indbygning (bag kontakt eller i dåse)"
+    ],
+    "forsyningsspaending": [
+      "200-240V AC",
+      "24V DC"
+    ],
     "effektmaaling": "Ja",
     "antal_kanaler": 2,
-    "protokol": ["WiFi", "Bluetooth", "Matter", "Zigbee"]
+    "protokol": [
+      "WiFi",
+      "Bluetooth",
+      "Matter",
+      "Zigbee"
+    ]
   },
   {
     "ean": "3800238072353",
@@ -243,13 +466,27 @@
     "fi_enummer": "2616164",
     "no_elnummer": "4542272",
     "navn": "Shelly Dimmer Gen4",
-    "anvendelse": ["Lysstyring"],
-    "type_lysstyring": ["Fasedæmp (standard lysdæmpning)"],
-    "installationsmetode": ["Indbygning (bag kontakt eller i dåse)"],
-    "forsyningsspaending": ["200-240V AC"],
+    "anvendelse": [
+      "Lysstyring"
+    ],
+    "type_lysstyring": [
+      "Fasedæmp (standard lysdæmpning)"
+    ],
+    "type_varmestyring": [],
+    "installationsmetode": [
+      "Indbygning (bag kontakt eller i dåse)"
+    ],
+    "forsyningsspaending": [
+      "200-240V AC"
+    ],
     "effektmaaling": "Ja",
     "antal_kanaler": 1,
-    "protokol": ["WiFi", "Bluetooth", "Matter", "Zigbee"]
+    "protokol": [
+      "WiFi",
+      "Bluetooth",
+      "Matter",
+      "Zigbee"
+    ]
   },
   {
     "ean": "3800238070786",
@@ -257,13 +494,27 @@
     "fi_enummer": "2616152",
     "no_elnummer": "4542273",
     "navn": "Shelly 1 Mini Gen4",
-    "anvendelse": ["Garageport", "Varmepumpe", "Adgangskontrol"],
+    "anvendelse": [
+      "Garageport",
+      "Varmepumpe",
+      "Adgangskontrol"
+    ],
     "type_lysstyring": [],
-    "installationsmetode": ["Indbygning (bag kontakt eller i dåse)"],
-    "forsyningsspaending": ["200-240V AC"],
+    "type_varmestyring": [],
+    "installationsmetode": [
+      "Indbygning (bag kontakt eller i dåse)"
+    ],
+    "forsyningsspaending": [
+      "200-240V AC"
+    ],
     "effektmaaling": "Nej",
     "antal_kanaler": 1,
-    "protokol": ["WiFi", "Bluetooth", "Matter", "Zigbee"]
+    "protokol": [
+      "WiFi",
+      "Bluetooth",
+      "Matter",
+      "Zigbee"
+    ]
   },
   {
     "ean": "3800238070809",
@@ -271,13 +522,29 @@
     "fi_enummer": "2616153",
     "no_elnummer": "4542274",
     "navn": "Shelly 1PM Mini Gen4",
-    "anvendelse": ["Lysstyring", "Ventilatorer", "Pumper"],
-    "type_lysstyring": ["Lysstyring (tænd/sluk)"],
-    "installationsmetode": ["Indbygning (bag kontakt eller i dåse)"],
-    "forsyningsspaending": ["200-240V AC"],
+    "anvendelse": [
+      "Lysstyring",
+      "Ventilatorer",
+      "Pumper"
+    ],
+    "type_lysstyring": [
+      "Lysstyring (tænd/sluk)"
+    ],
+    "type_varmestyring": [],
+    "installationsmetode": [
+      "Indbygning (bag kontakt eller i dåse)"
+    ],
+    "forsyningsspaending": [
+      "200-240V AC"
+    ],
     "effektmaaling": "Ja",
     "antal_kanaler": 1,
-    "protokol": ["WiFi", "Bluetooth", "Matter", "Zigbee"]
+    "protokol": [
+      "WiFi",
+      "Bluetooth",
+      "Matter",
+      "Zigbee"
+    ]
   },
   {
     "ean": "3800238070823",
@@ -285,13 +552,25 @@
     "fi_enummer": "6707214",
     "no_elnummer": "8230007",
     "navn": "Shelly EM Mini Gen4",
-    "anvendelse": ["Energimåling 1 fase"],
+    "anvendelse": [
+      "Energimåling 1 fase"
+    ],
     "type_lysstyring": [],
-    "installationsmetode": ["Indbygning (bag kontakt eller i dåse)"],
-    "forsyningsspaending": ["200-240V AC"],
+    "type_varmestyring": [],
+    "installationsmetode": [
+      "Indbygning (bag kontakt eller i dåse)"
+    ],
+    "forsyningsspaending": [
+      "200-240V AC"
+    ],
     "effektmaaling": "Ja",
     "antal_kanaler": null,
-    "protokol": ["WiFi", "Bluetooth", "Matter", "Zigbee"]
+    "protokol": [
+      "WiFi",
+      "Bluetooth",
+      "Matter",
+      "Zigbee"
+    ]
   },
   {
     "ean": "3800235268001",
@@ -299,13 +578,27 @@
     "fi_enummer": "2710500",
     "no_elnummer": "4542668",
     "navn": "Shelly Pro 1",
-    "anvendelse": ["Garageport", "Varmepumpe", "Adgangskontrol"],
+    "anvendelse": [
+      "Garageport",
+      "Varmepumpe",
+      "Adgangskontrol"
+    ],
     "type_lysstyring": [],
-    "installationsmetode": ["Tavlemontering (DIN-skinne)"],
-    "forsyningsspaending": ["200-240V AC", "24V DC"],
+    "type_varmestyring": [],
+    "installationsmetode": [
+      "Tavlemontering (DIN-skinne)"
+    ],
+    "forsyningsspaending": [
+      "200-240V AC",
+      "24V DC"
+    ],
     "effektmaaling": "Nej",
     "antal_kanaler": 1,
-    "protokol": ["WiFi", "Bluetooth", "LAN (ethernet)"]
+    "protokol": [
+      "WiFi",
+      "Bluetooth",
+      "LAN (ethernet)"
+    ]
   },
   {
     "ean": "3800235268025",
@@ -313,13 +606,27 @@
     "fi_enummer": "2710501",
     "no_elnummer": "4542669",
     "navn": "Shelly Pro 2",
-    "anvendelse": ["Garageport", "Varmepumpe", "Adgangskontrol"],
+    "anvendelse": [
+      "Garageport",
+      "Varmepumpe",
+      "Adgangskontrol"
+    ],
     "type_lysstyring": [],
-    "installationsmetode": ["Tavlemontering (DIN-skinne)"],
-    "forsyningsspaending": ["200-240V AC", "24V DC"],
+    "type_varmestyring": [],
+    "installationsmetode": [
+      "Tavlemontering (DIN-skinne)"
+    ],
+    "forsyningsspaending": [
+      "200-240V AC",
+      "24V DC"
+    ],
     "effektmaaling": "Nej",
     "antal_kanaler": 2,
-    "protokol": ["WiFi", "Bluetooth", "LAN (ethernet)"]
+    "protokol": [
+      "WiFi",
+      "Bluetooth",
+      "LAN (ethernet)"
+    ]
   },
   {
     "ean": "3800235268018",
@@ -327,13 +634,29 @@
     "fi_enummer": "2710502",
     "no_elnummer": "4542670",
     "navn": "Shelly Pro 1PM",
-    "anvendelse": ["Lysstyring", "Ventilatorer", "Pumper", "Stikkontakter"],
-    "type_lysstyring": ["Lysstyring (tænd/sluk)"],
-    "installationsmetode": ["Tavlemontering (DIN-skinne)"],
-    "forsyningsspaending": ["200-240V AC"],
+    "anvendelse": [
+      "Lysstyring",
+      "Ventilatorer",
+      "Pumper",
+      "Stikkontakter"
+    ],
+    "type_lysstyring": [
+      "Lysstyring (tænd/sluk)"
+    ],
+    "type_varmestyring": [],
+    "installationsmetode": [
+      "Tavlemontering (DIN-skinne)"
+    ],
+    "forsyningsspaending": [
+      "200-240V AC"
+    ],
     "effektmaaling": "Ja",
     "antal_kanaler": 1,
-    "protokol": ["WiFi", "Bluetooth", "LAN (ethernet)"]
+    "protokol": [
+      "WiFi",
+      "Bluetooth",
+      "LAN (ethernet)"
+    ]
   },
   {
     "ean": "3800235268032",
@@ -341,13 +664,30 @@
     "fi_enummer": "2710503",
     "no_elnummer": "4542671",
     "navn": "Shelly Pro 2PM",
-    "anvendelse": ["Lysstyring", "Ventilatorer", "Pumper", "Stikkontakter", "Solafskærmning"],
-    "type_lysstyring": ["Lysstyring (tænd/sluk)"],
-    "installationsmetode": ["Tavlemontering (DIN-skinne)"],
-    "forsyningsspaending": ["200-240V AC"],
+    "anvendelse": [
+      "Lysstyring",
+      "Ventilatorer",
+      "Pumper",
+      "Stikkontakter",
+      "Solafskærmning"
+    ],
+    "type_lysstyring": [
+      "Lysstyring (tænd/sluk)"
+    ],
+    "type_varmestyring": [],
+    "installationsmetode": [
+      "Tavlemontering (DIN-skinne)"
+    ],
+    "forsyningsspaending": [
+      "200-240V AC"
+    ],
     "effektmaaling": "Ja",
     "antal_kanaler": 2,
-    "protokol": ["WiFi", "Bluetooth", "LAN (ethernet)"]
+    "protokol": [
+      "WiFi",
+      "Bluetooth",
+      "LAN (ethernet)"
+    ]
   },
   {
     "ean": "3800235268094",
@@ -355,13 +695,30 @@
     "fi_enummer": "2710504",
     "no_elnummer": "4542672",
     "navn": "Shelly Pro 3",
-    "anvendelse": ["Garageport", "Varmepumpe", "Adgangskontrol"],
+    "anvendelse": [
+      "Garageport",
+      "Varmepumpe",
+      "Adgangskontrol",
+      "Varmestyring"
+    ],
     "type_lysstyring": [],
-    "installationsmetode": ["Tavlemontering (DIN-skinne)"],
-    "forsyningsspaending": ["200-240V AC", "24V DC"],
+    "type_varmestyring": [
+      "Central styring 12/24V"
+    ],
+    "installationsmetode": [
+      "Tavlemontering (DIN-skinne)"
+    ],
+    "forsyningsspaending": [
+      "200-240V AC",
+      "24V DC"
+    ],
     "effektmaaling": "Nej",
     "antal_kanaler": 3,
-    "protokol": ["WiFi", "Bluetooth", "LAN (ethernet)"]
+    "protokol": [
+      "WiFi",
+      "Bluetooth",
+      "LAN (ethernet)"
+    ]
   },
   {
     "ean": "3800235268049",
@@ -369,13 +726,32 @@
     "fi_enummer": "2710505",
     "no_elnummer": "4542673",
     "navn": "Shelly Pro 4PM",
-    "anvendelse": ["Lysstyring", "Ventilatorer", "Pumper", "Stikkontakter", "Varmestyring"],
-    "type_lysstyring": ["Lysstyring (tænd/sluk)"],
-    "installationsmetode": ["Tavlemontering (DIN-skinne)"],
-    "forsyningsspaending": ["200-240V AC"],
+    "anvendelse": [
+      "Lysstyring",
+      "Ventilatorer",
+      "Pumper",
+      "Stikkontakter",
+      "Varmestyring"
+    ],
+    "type_lysstyring": [
+      "Lysstyring (tænd/sluk)"
+    ],
+    "type_varmestyring": [
+      "Central styring 230V"
+    ],
+    "installationsmetode": [
+      "Tavlemontering (DIN-skinne)"
+    ],
+    "forsyningsspaending": [
+      "200-240V AC"
+    ],
     "effektmaaling": "Ja",
     "antal_kanaler": 4,
-    "protokol": ["WiFi", "Bluetooth", "LAN (ethernet)"]
+    "protokol": [
+      "WiFi",
+      "Bluetooth",
+      "LAN (ethernet)"
+    ]
   },
   {
     "ean": "3800235268124",
@@ -383,13 +759,24 @@
     "fi_enummer": "2616125",
     "no_elnummer": "4542674",
     "navn": "Shelly Pro Dual Cover PM",
-    "anvendelse": ["Solafskærmning"],
+    "anvendelse": [
+      "Solafskærmning"
+    ],
     "type_lysstyring": [],
-    "installationsmetode": ["Tavlemontering (DIN-skinne)"],
-    "forsyningsspaending": ["200-240V AC"],
+    "type_varmestyring": [],
+    "installationsmetode": [
+      "Tavlemontering (DIN-skinne)"
+    ],
+    "forsyningsspaending": [
+      "200-240V AC"
+    ],
     "effektmaaling": "Ja",
     "antal_kanaler": 2,
-    "protokol": ["WiFi", "Bluetooth", "LAN (ethernet)"]
+    "protokol": [
+      "WiFi",
+      "Bluetooth",
+      "LAN (ethernet)"
+    ]
   },
   {
     "ean": "3800235268162",
@@ -397,13 +784,26 @@
     "fi_enummer": "2616134",
     "no_elnummer": "4542675",
     "navn": "Shelly Pro Dimmer 1PM",
-    "anvendelse": ["Lysstyring"],
-    "type_lysstyring": ["Fasedæmp (standard lysdæmpning)"],
-    "installationsmetode": ["Tavlemontering (DIN-skinne)"],
-    "forsyningsspaending": ["200-240V AC"],
+    "anvendelse": [
+      "Lysstyring"
+    ],
+    "type_lysstyring": [
+      "Fasedæmp (standard lysdæmpning)"
+    ],
+    "type_varmestyring": [],
+    "installationsmetode": [
+      "Tavlemontering (DIN-skinne)"
+    ],
+    "forsyningsspaending": [
+      "200-240V AC"
+    ],
     "effektmaaling": "Ja",
     "antal_kanaler": 1,
-    "protokol": ["WiFi", "Bluetooth", "LAN (ethernet)"]
+    "protokol": [
+      "WiFi",
+      "Bluetooth",
+      "LAN (ethernet)"
+    ]
   },
   {
     "ean": "3800235268179",
@@ -411,13 +811,26 @@
     "fi_enummer": "2616135",
     "no_elnummer": "4542676",
     "navn": "Shelly Pro Dimmer 2PM",
-    "anvendelse": ["Lysstyring"],
-    "type_lysstyring": ["Fasedæmp (standard lysdæmpning)"],
-    "installationsmetode": ["Tavlemontering (DIN-skinne)"],
-    "forsyningsspaending": ["200-240V AC"],
+    "anvendelse": [
+      "Lysstyring"
+    ],
+    "type_lysstyring": [
+      "Fasedæmp (standard lysdæmpning)"
+    ],
+    "type_varmestyring": [],
+    "installationsmetode": [
+      "Tavlemontering (DIN-skinne)"
+    ],
+    "forsyningsspaending": [
+      "200-240V AC"
+    ],
     "effektmaaling": "Ja",
     "antal_kanaler": 2,
-    "protokol": ["WiFi", "Bluetooth", "LAN (ethernet)"]
+    "protokol": [
+      "WiFi",
+      "Bluetooth",
+      "LAN (ethernet)"
+    ]
   },
   {
     "ean": "3800235268209",
@@ -425,13 +838,28 @@
     "fi_enummer": "2616144",
     "no_elnummer": "4542677",
     "navn": "Shelly Pro Dimmer 0/1-10V PM",
-    "anvendelse": ["Lysstyring", "Motorstyring", "Hastighedsstyring af ventilatorer"],
-    "type_lysstyring": ["0/1-10V"],
-    "installationsmetode": ["Tavlemontering (DIN-skinne)"],
-    "forsyningsspaending": ["200-240V AC"],
+    "anvendelse": [
+      "Lysstyring",
+      "Motorstyring",
+      "Hastighedsstyring af ventilatorer"
+    ],
+    "type_lysstyring": [
+      "0/1-10V"
+    ],
+    "type_varmestyring": [],
+    "installationsmetode": [
+      "Tavlemontering (DIN-skinne)"
+    ],
+    "forsyningsspaending": [
+      "200-240V AC"
+    ],
     "effektmaaling": "Ja",
     "antal_kanaler": 1,
-    "protokol": ["WiFi", "Bluetooth", "LAN (ethernet)"]
+    "protokol": [
+      "WiFi",
+      "Bluetooth",
+      "LAN (ethernet)"
+    ]
   },
   {
     "ean": "3800235268216",
@@ -439,13 +867,28 @@
     "fi_enummer": "2616145",
     "no_elnummer": "4542678",
     "navn": "Shelly Pro RGBWW PM",
-    "anvendelse": ["Lysstyring"],
-    "type_lysstyring": ["LED-bånd", "Lavvoltsbelysning (12V/24V)"],
-    "installationsmetode": ["Tavlemontering (DIN-skinne)"],
-    "forsyningsspaending": ["12V DC", "24V DC"],
+    "anvendelse": [
+      "Lysstyring"
+    ],
+    "type_lysstyring": [
+      "LED-bånd",
+      "Lavvoltsbelysning (12V/24V)"
+    ],
+    "type_varmestyring": [],
+    "installationsmetode": [
+      "Tavlemontering (DIN-skinne)"
+    ],
+    "forsyningsspaending": [
+      "12V DC",
+      "24V DC"
+    ],
     "effektmaaling": "Ja",
     "antal_kanaler": 5,
-    "protokol": ["WiFi", "Bluetooth", "LAN (ethernet)"]
+    "protokol": [
+      "WiFi",
+      "Bluetooth",
+      "LAN (ethernet)"
+    ]
   },
   {
     "ean": "3800235261873",
@@ -453,13 +896,20 @@
     "fi_enummer": "6707211",
     "no_elnummer": "8200767",
     "navn": "Shelly EM Gen3 + 50A CT",
-    "anvendelse": ["Energimåling 1 fase"],
+    "anvendelse": [
+      "Energimåling 1 fase"
+    ],
     "type_lysstyring": [],
-    "installationsmetode": ["Indbygning (bag kontakt eller i dåse)"],
+    "type_varmestyring": [],
+    "installationsmetode": [
+      "Indbygning (bag kontakt eller i dåse)"
+    ],
     "forsyningsspaending": [],
     "effektmaaling": null,
     "antal_kanaler": null,
-    "protokol": ["WiFi"]
+    "protokol": [
+      "WiFi"
+    ]
   },
   {
     "ean": "3800235261941",
@@ -467,13 +917,20 @@
     "fi_enummer": "6707212",
     "no_elnummer": "8200768",
     "navn": "Shelly 3EM-63T Gen3 (flat terminal model)",
-    "anvendelse": ["Energimåling 3 faser"],
+    "anvendelse": [
+      "Energimåling 3 faser"
+    ],
     "type_lysstyring": [],
-    "installationsmetode": ["Tavlemontering (DIN-skinne)"],
+    "type_varmestyring": [],
+    "installationsmetode": [
+      "Tavlemontering (DIN-skinne)"
+    ],
     "forsyningsspaending": [],
     "effektmaaling": null,
     "antal_kanaler": null,
-    "protokol": ["WiFi"]
+    "protokol": [
+      "WiFi"
+    ]
   },
   {
     "ean": "3800235261958",
@@ -481,13 +938,20 @@
     "fi_enummer": "6707213",
     "no_elnummer": "8200769",
     "navn": "Shelly 3EM-63W Gen3 (wire model)",
-    "anvendelse": ["Energimåling 3 faser"],
+    "anvendelse": [
+      "Energimåling 3 faser"
+    ],
     "type_lysstyring": [],
-    "installationsmetode": ["Tavlemontering (DIN-skinne)"],
+    "type_varmestyring": [],
+    "installationsmetode": [
+      "Tavlemontering (DIN-skinne)"
+    ],
     "forsyningsspaending": [],
     "effektmaaling": null,
     "antal_kanaler": null,
-    "protokol": ["WiFi"]
+    "protokol": [
+      "WiFi"
+    ]
   },
   {
     "ean": "3800235268193",
@@ -495,13 +959,21 @@
     "fi_enummer": "6707210",
     "no_elnummer": "8200770",
     "navn": "Shelly Pro 3EM CT63",
-    "anvendelse": ["Energimåling 3 faser"],
+    "anvendelse": [
+      "Energimåling 3 faser"
+    ],
     "type_lysstyring": [],
-    "installationsmetode": ["Tavlemontering (DIN-skinne)"],
+    "type_varmestyring": [],
+    "installationsmetode": [
+      "Tavlemontering (DIN-skinne)"
+    ],
     "forsyningsspaending": [],
     "effektmaaling": null,
     "antal_kanaler": null,
-    "protokol": ["WiFi", "LAN (ethernet)"]
+    "protokol": [
+      "WiFi",
+      "LAN (ethernet)"
+    ]
   },
   {
     "ean": "3800235268100",
@@ -509,13 +981,21 @@
     "fi_enummer": "6707203",
     "no_elnummer": "8200771",
     "navn": "Shelly Pro 3EM 120A",
-    "anvendelse": ["Energimåling 3 faser"],
+    "anvendelse": [
+      "Energimåling 3 faser"
+    ],
     "type_lysstyring": [],
-    "installationsmetode": ["Tavlemontering (DIN-skinne)"],
+    "type_varmestyring": [],
+    "installationsmetode": [
+      "Tavlemontering (DIN-skinne)"
+    ],
     "forsyningsspaending": [],
     "effektmaaling": null,
     "antal_kanaler": null,
-    "protokol": ["WiFi", "LAN (ethernet)"]
+    "protokol": [
+      "WiFi",
+      "LAN (ethernet)"
+    ]
   },
   {
     "ean": "3800235268117",
@@ -523,13 +1003,21 @@
     "fi_enummer": "6707204",
     "no_elnummer": "8200772",
     "navn": "Shelly Pro 3EM 400A",
-    "anvendelse": ["Energimåling 3 faser"],
+    "anvendelse": [
+      "Energimåling 3 faser"
+    ],
     "type_lysstyring": [],
-    "installationsmetode": ["Tavlemontering (DIN-skinne)"],
+    "type_varmestyring": [],
+    "installationsmetode": [
+      "Tavlemontering (DIN-skinne)"
+    ],
     "forsyningsspaending": [],
     "effektmaaling": null,
     "antal_kanaler": null,
-    "protokol": ["WiFi", "LAN (ethernet)"]
+    "protokol": [
+      "WiFi",
+      "LAN (ethernet)"
+    ]
   },
   {
     "ean": "3800235268148",
@@ -537,12 +1025,20 @@
     "fi_enummer": "6707205",
     "no_elnummer": "8200773",
     "navn": "Shelly Pro EM - 50A (with 2 50A CT)",
-    "anvendelse": ["Energimåling 1 fase"],
+    "anvendelse": [
+      "Energimåling 1 fase"
+    ],
     "type_lysstyring": [],
-    "installationsmetode": ["Tavlemontering (DIN-skinne)"],
+    "type_varmestyring": [],
+    "installationsmetode": [
+      "Tavlemontering (DIN-skinne)"
+    ],
     "forsyningsspaending": [],
     "effektmaaling": null,
     "antal_kanaler": null,
-    "protokol": ["WiFi", "LAN (ethernet)"]
+    "protokol": [
+      "WiFi",
+      "LAN (ethernet)"
+    ]
   }
 ]

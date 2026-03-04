@@ -226,6 +226,18 @@ const TRANSLATIONS = {
         de: 'Soll das Gerät den Verbrauch messen können?',
         en: 'Should the device measure power consumption?'
     },
+    filterTitle_type_varmestyring: {
+        da: 'Type varmestyring', sv: 'Typ av värmestyrning', no: 'Type varmestyring',
+        fi: 'Lämmönohjauksen tyyppi', de: 'Art der Heizungssteuerung', en: 'Heating control type'
+    },
+    filterDesc_type_varmestyring: {
+        da: 'Hvilken type varmestyring har du brug for?',
+        sv: 'Vilken typ av värmestyrning behöver du?',
+        no: 'Hvilken type varmestyring trenger du?',
+        fi: 'Millaista lämmönohjausta tarvitset?',
+        de: 'Welche Art von Heizungssteuerung brauchst du?',
+        en: 'What type of heating control do you need?'
+    },
     filterTitle_antal_kanaler: {
         da: 'Antal kanaler', sv: 'Antal kanaler', no: 'Antall kanaler',
         fi: 'Kanavien määrä', de: 'Anzahl Kanäle', en: 'Number of channels'
@@ -237,6 +249,32 @@ const TRANSLATIONS = {
         fi: 'Kuinka monta kanavaa tarvitset?',
         de: 'Wie viele Kanäle brauchst du?',
         en: 'How many channels do you need?'
+    },
+
+    // ─── Solution Guide ─────────────────────────
+    guideTitle: {
+        da: 'Opsætningsvejledning tilgængelig',
+        sv: 'Installationsguide tillgänglig',
+        no: 'Oppsettsguide tilgjengelig',
+        fi: 'Asennusopas saatavilla',
+        de: 'Einrichtungsanleitung verfügbar',
+        en: 'Setup guide available'
+    },
+    guideDesc: {
+        da: 'Vi har lavet en detaljeret opsætningsvejledning til {usecase}.',
+        sv: 'Vi har skapat en detaljerad installationsguide för {usecase}.',
+        no: 'Vi har laget en detaljert oppsettsguide for {usecase}.',
+        fi: 'Olemme laatineet yksityiskohtaisen asennusoppaan: {usecase}.',
+        de: 'Wir haben eine detaillierte Einrichtungsanleitung für {usecase} erstellt.',
+        en: 'We have created a detailed setup guide for {usecase}.'
+    },
+    guideLink: {
+        da: 'Læs vejledning',
+        sv: 'Läs guide',
+        no: 'Les guide',
+        fi: 'Lue opas',
+        de: 'Anleitung lesen',
+        en: 'Read guide'
     },
 
     // ─── Filter chip values ─────────────────────
@@ -269,6 +307,19 @@ const TRANSLATIONS = {
     'fv_Tavlemontering (DIN-skinne)': {
         da: 'Tavlemontering (DIN-skinne)', sv: 'Centralmontering (DIN-skena)', no: 'Tavlemontering (DIN-skinne)',
         fi: 'Keskusasennus (DIN-kisko)', de: 'Hutschienenmontage (DIN-Schiene)', en: 'DIN rail mounting'
+    },
+    // type_varmestyring values
+    'fv_Decentral styring 230V': {
+        da: 'Decentral styring 230V', sv: 'Decentralstyrning 230V', no: 'Desentralstyring 230V',
+        fi: 'Hajautettu ohjaus 230V', de: 'Dezentrale Steuerung 230V', en: 'Decentralized control 230V'
+    },
+    'fv_Central styring 230V': {
+        da: 'Central styring 230V', sv: 'Centralstyrning 230V', no: 'Sentralstyring 230V',
+        fi: 'Keskitetty ohjaus 230V', de: 'Zentrale Steuerung 230V', en: 'Centralized control 230V'
+    },
+    'fv_Central styring 12/24V': {
+        da: 'Central styring 12/24V', sv: 'Centralstyrning 12/24V', no: 'Sentralstyring 12/24V',
+        fi: 'Keskitetty ohjaus 12/24V', de: 'Zentrale Steuerung 12/24V', en: 'Centralized control 12/24V'
     },
     // effektmaaling values
     fv_Ja: {
