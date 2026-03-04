@@ -169,7 +169,7 @@ async function init() {
 // ─── Load Products ──────────────────────────────────────────
 async function loadProducts() {
     try {
-        const res = await fetch('shelly_products.json');
+        const res = await fetch('shelly_products.json?v=' + Date.now());
         products = await res.json();
         products.forEach(p => {
             p.protokol = p.protokol.map(proto =>
@@ -539,8 +539,11 @@ function updateFilterAvailability() {
         });
 
         // Hide entire group if no options are available (and none are selected)
-        const hasActiveChips = state.filters[config.key].length > 0;
-        groupEl.classList.toggle('filter-hidden', visibleCount === 0 && !hasActiveChips);
+        // Skip conditional filters — their visibility is managed by updateConditionalFilters()
+        if (!config.conditional) {
+            const hasActiveChips = state.filters[config.key].length > 0;
+            groupEl.classList.toggle('filter-hidden', visibleCount === 0 && !hasActiveChips);
+        }
     });
 }
 
